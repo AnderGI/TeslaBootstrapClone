@@ -7,13 +7,11 @@ html {
 }
 
 body {
-  height: 100vh;
   padding: 0;
 }
 div.container-fluid {
   height: 100%;
   margin: 0;
-  padding: 0;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -43,6 +41,7 @@ div.navbar-brand {
 
 button.navbar-toggler {
   background-color: rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
 }
 
 ul.navbar-Icons svg {
@@ -54,6 +53,16 @@ nav li:hover {
   border-radius: 2px;
 }
 
+/*FOOTER*/
+footer ul li.list-group-item {
+  background-color: black;
+  border: none;
+}
+
+footer ul li.list-group-item a {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   /* Register Alert Y Menú */
