@@ -10,8 +10,12 @@ body {
   padding: 0;
 }
 div.container-fluid {
-  height: 100%;
   margin: 0;
+}
+
+/*VIDEO*/
+video {
+  max-width: 100%;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
