@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/*   No media query since this is the default in Bootstrap */
+
+div.register-alert {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 1rem;
+  letter-spacing: 0em;
+}
+div.navbar-brand {
+  width: 7em;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button.navbar-toggler {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+ul.navbar-Icons svg {
+  width: 1.5em;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* Register Alert Y Menú */
+
+  div.navbar-brand {
+    width: 10em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Register Alert Y Menú */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Register Alert Y Menú */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Register Alert Y Menú */
+}
