@@ -23,11 +23,11 @@ div.register-alert {
     #302b63,
     #0f0c29
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 0em;
 }
 div.navbar-brand {
-  width: 7em;
+  width: 6.5em;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -39,10 +39,17 @@ ul.navbar-Icons svg {
   width: 1.5em;
 }
 
+nav li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   /* Register Alert Y Menú */
-
+  div.register-alert {
+    font-size: 0.9rem;
+  }
   div.navbar-brand {
     width: 10em;
   }
@@ -51,6 +58,9 @@ ul.navbar-Icons svg {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   /* Register Alert Y Menú */
+  div.register-alert {
+    font-size: 1rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
