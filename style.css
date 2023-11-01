@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+}
+div.container-fluid {
+  height: 100%;
+  margin: 0;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/*   No media query since this is the default in Bootstrap */
+
+div.register-alert {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 0.8rem;
+  letter-spacing: 0em;
+}
+div.navbar-brand {
+  width: 6.5em;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button.navbar-toggler {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+ul.navbar-Icons svg {
+  width: 1.5em;
+}
+
+nav li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+/*FOOTER*/
+footer ul li.list-group-item {
+  background-color: black;
+  border: none;
+}
+
+footer ul li.list-group-item a {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* Register Alert Y Menú */
+  div.register-alert {
+    font-size: 0.9rem;
+  }
+  div.navbar-brand {
+    width: 10em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Register Alert Y Menú */
+  div.register-alert {
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Register Alert Y Menú */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Register Alert Y Menú */
+}
