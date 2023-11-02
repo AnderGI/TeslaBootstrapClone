@@ -13,9 +13,16 @@ div.container-fluid {
   margin: 0;
 }
 
+/*Tesla Name Logo*/
+svg.teslaNameLogo{
+  width: 6em;
+}
+
+
 /*VIDEO*/
 video {
   max-width: 100%;
+  max-height: 100%;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -51,20 +58,26 @@ button.navbar-toggler {
 ul.navbar-Icons svg {
   width: 1.5em;
 }
-
+nav ul.navbar-nav{
+  font-weight: 600;
+}
 nav li:hover {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 2px;
 }
 
 /*FOOTER*/
+footer{
+  background-color: black;
+}
+
 footer ul li.list-group-item {
   background-color: black;
   border: none;
 }
 
 footer ul li.list-group-item a {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: rgba(255, 255, 255, 0.5);
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -83,6 +96,10 @@ footer ul li.list-group-item a {
   /* Register Alert Y Menú */
   div.register-alert {
     font-size: 1rem;
+  }
+  footer ul li.list-group-item a {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
   }
 }
 
