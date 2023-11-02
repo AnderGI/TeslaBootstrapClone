@@ -8,14 +8,31 @@ html {
 
 body {
   padding: 0;
+  overflow-x: hidden;
+}
+
+
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
 }
 div.container-fluid {
   margin: 0;
 }
 
+/*Tesla Name Logo*/
+svg.teslaNameLogo{
+  width: 6em;
+}
+
+
 /*VIDEO*/
 video {
-  max-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -51,22 +68,72 @@ button.navbar-toggler {
 ul.navbar-Icons svg {
   width: 1.5em;
 }
-
+nav ul.navbar-nav{
+  font-weight: 600;
+}
 nav li:hover {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 2px;
 }
 
 /*FOOTER*/
+footer{
+  background-color: black;
+}
+
 footer ul li.list-group-item {
   background-color: black;
   border: none;
 }
 
 footer ul li.list-group-item a {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: rgba(255, 255, 255, 0.5);
 }
+
+
+/*Section Sliders*/
+section.sliders{
+  position: relative;
+}
+
+section.sliders div.headers,
+section.sliders div.footerBtns{
+  position: absolute;
+  z-index: 1;
+}
+
+section.sliders div.headers{
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin: auto;
+}
+
+section.sliders div.headers h3{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+section.sliders div.headers p{
+  font-size: 0.9rem;
+}
+
+section.sliders div.footerBtns{
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin: auto;
+}
+
+section.sliders div.footerBtns button{
+  border: 4px solid snow;
+
+  width: 100%;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   /* Register Alert Y Menú */
@@ -76,6 +143,10 @@ footer ul li.list-group-item a {
   div.navbar-brand {
     width: 10em;
   }
+  section.sliders div.footerBtns button{
+    width: 75%;
+  }
+  
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -84,11 +155,21 @@ footer ul li.list-group-item a {
   div.register-alert {
     font-size: 1rem;
   }
+  footer ul li.list-group-item a {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  section.sliders div.footerBtns button{
+    width: 50%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /* Register Alert Y Menú */
+  section.sliders div.footerBtns button{
+    width: 25%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

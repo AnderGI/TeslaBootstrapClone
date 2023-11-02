@@ -81,11 +81,13 @@
           <div class="row">
             <div class="col-12 p-0">
               <!--Navbar TESLA name logo-->
-              <nav class="navbar navbar-expand-lg navbar-light px-5">
+              <nav
+                class="navbar navbar-expand-lg navbar-light px-5 px-md-4 pt-2"
+              >
                 <div class="navbar-brand d-inline-block m-0 p-0 mr-3">
                   <a class="text-dark" href="index.html">
                     <svg
-                      class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
+                      class="teslaNameLogo tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
                       viewBox="0 0 342 35"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -97,7 +99,7 @@
                   </a>
                 </div>
                 <button
-                  class="navbar-toggler font-weight-bold p-1 m-0"
+                  class="navbar-toggler text-white bg-tertiary p-1 m-0"
                   type="button"
                   data-toggle="collapse"
                   data-target="#navbarSupportedContent"
@@ -112,7 +114,7 @@
                   class="collapse navbar-collapse"
                   id="navbarSupportedContent"
                 >
-                  <ul class="navbar-nav ml-auto font-weight-bold">
+                  <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                       <a class="nav-link text-white" href="#">Vehículos</a>
                     </li>
@@ -180,15 +182,56 @@
         </div>
       </div>
       <!--Video Section-->
-      <section class="col-12 m-0 p-0">
+      <section class="col-12 m-0 p-0 sliders">
+        <div class="headers row">
+          <article class="col-12 text-center text-white">
+            <h3>Disfrute de Tesla</h3>
+            <p>Programe una prueba de conducción hoy mismo</p>
+          </article>
+        </div>
+
         <div class="row">
           <div class="col-12 p-0 m-0">
-            <div>
+            <div class="p-0 m-0 d-flex flex-column">
               <video autoplay loop muted src="./video/video.webm"></video>
             </div>
           </div>
         </div>
+
+        <div class="footerBtns row">
+          <div
+            class="col-12 d-flex flex-row justify-content-center align-content-center"
+          >
+            <button class="btn text-white">Prueba de conducción</button>
+          </div>
+        </div>
       </section>
     </div>
+    <footer class="row m-0 p-0">
+      <div class="col-12 p-2 m-0">
+        <ul
+          class="list-group border border-0 d-sm-flex flex-sm-row justify-content-sm-around"
+        >
+          <li class="list-group-item text-center p-0 m-0">
+            <a href="#" class="font-weight-bold">Tesla &copy; 2023</a>
+          </li>
+          <li class="list-group-item text-center p-0 m-0">
+            <a href="#" class="font-weight-bold">Privacidad y legal</a>
+          </li>
+          <li class="d-none d-sm-block list-group-item text-center p-0 m-0">
+            <a href="#" class="font-weight-bold">Contacto</a>
+          </li>
+          <li class="list-group-item text-center p-0 m-0">
+            <a href="#" class="font-weight-bold">Noticias</a>
+          </li>
+          <li class="d-none d-sm-block list-group-item text-center p-0 m-0">
+            <a href="#" class="font-weight-bold">Seguir Informando</a>
+          </li>
+          <li class="d-none d-sm-block list-group-item text-center p-0 m-0">
+            <a href="#" class="font-weight-bold">Localización de tiendas</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
