@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  --btnWhite: #e9eaeb;
+  --btnLightBrown: #4a4b4d;
 }
 
 html {
@@ -11,8 +13,8 @@ body {
   overflow-x: hidden;
 }
 
-
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 body {
@@ -23,16 +25,15 @@ div.container-fluid {
 }
 
 /*Tesla Name Logo*/
-svg.teslaNameLogo{
+svg.teslaNameLogo {
   width: 6em;
 }
 
-
 /*VIDEO*/
-video {
+video,
+img.sectionImg {
   height: 100vh;
   object-fit: cover;
-  
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -68,7 +69,7 @@ button.navbar-toggler {
 ul.navbar-Icons svg {
   width: 1.5em;
 }
-nav ul.navbar-nav{
+nav ul.navbar-nav {
   font-weight: 600;
 }
 nav li:hover {
@@ -77,7 +78,7 @@ nav li:hover {
 }
 
 /*FOOTER*/
-footer{
+footer {
   background-color: black;
 }
 
@@ -91,36 +92,38 @@ footer ul li.list-group-item a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-
 /*Section Sliders*/
-section.sliders{
+section.sliders {
   position: relative;
 }
 
 section.sliders div.headers,
-section.sliders div.footerBtns{
+section.sliders div.footerBtns {
   position: absolute;
   z-index: 1;
 }
 
-section.sliders div.headers{
-  top: 28%;
+section.sliders div.headers {
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   margin: auto;
 }
 
-section.sliders div.headers h3{
-  font-size: 2rem;
+section.sliders div.headers h3 {
+  font-size: 3rem;
   font-weight: 700;
 }
+section.sliders div.headers h3.brown {
+  color: var(--btnLightBrown);
+}
 
-section.sliders div.headers p{
+section.sliders div.headers p {
   font-size: 0.9rem;
 }
 
-section.sliders div.footerBtns{
+section.sliders div.footerBtns {
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
@@ -128,12 +131,41 @@ section.sliders div.footerBtns{
   margin: auto;
 }
 
-section.sliders div.footerBtns button{
+section.sliders div.footerBtns button {
   border: 4px solid snow;
 
   width: 100%;
 }
 
+section.sliders.others div.footerBtns div {
+  gap: 1em;
+}
+
+section.sliders.others a {
+  color: var(--btnLightBrown);
+  font-weight: 600;
+  font-size: 1rem;
+}
+section.sliders.others div.footerBtns div button {
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+section.sliders.others div.footerBtns div button:first-child {
+  background-color: var(--btnLightBrown);
+  color: var(--btnWhite);
+}
+
+section.sliders.others div.footerBtns div button:last-child {
+  background-color: var(--btnWhite);
+  color: var(--btnLightBrown);
+}
+
+/*
+white #E9EAEB
+light brown #4A4B4D
+*/
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   /* Register Alert Y Menú */
@@ -143,10 +175,9 @@ section.sliders div.footerBtns button{
   div.navbar-brand {
     width: 10em;
   }
-  section.sliders div.footerBtns button{
+  section.sliders div.footerBtns button {
     width: 75%;
   }
-  
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -159,7 +190,7 @@ section.sliders div.footerBtns button{
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.5);
   }
-  section.sliders div.footerBtns button{
+  section.sliders div.footerBtns button {
     width: 50%;
   }
 }
@@ -167,7 +198,7 @@ section.sliders div.footerBtns button{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /* Register Alert Y Menú */
-  section.sliders div.footerBtns button{
+  section.sliders div.footerBtns button {
     width: 25%;
   }
 }
