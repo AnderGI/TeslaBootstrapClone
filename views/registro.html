@@ -6,11 +6,12 @@
     <title>Seguir Informando | Tesla España</title>
     <link
       rel="shortcut icon"
-      href="images/svg/tesla-logo.svg"
+      href="../resources/images/svg/tesla-logo.svg"
       type="image/svg+xml"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="registro.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/registro.css" />
+    <link rel="stylesheet" href="../styles/header.css ">
     <!-- Bootstrap CSS -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -63,17 +64,13 @@
       </script>
   </head>
   <body>
-    <div class="container-fluid" id="registroContainer">
-      <!--Register Alert + Navbar Menu-->
-      <div class="row">
-        <div class="col-12">
-          <!--Navbar Menu-->
-          <div class="row">
-            <div class="col-12 p-0">
-              <!--Navbar TESLA name logo-->
-              <nav class="navbar navbar-expand-lg navbar-light px-4 pt-2">
+    <main class="container-fluid" id="registroContainer">
+      <!--HEADER-->
+      <header class="row">
+        <!--Navbar TESLA name logo-->
+        <nav class="col-12 navbar navbar-expand-lg navbar-light px-5 pt-3">
                 <div class="navbar-brand d-inline-block m-0 p-0 mr-3">
-                  <a class="text-dark" href="index.html">
+                  <a class="text-dark" href="../index.html">
                     <svg
                       class="teslaNameLogo tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
                       viewBox="0 0 342 35"
@@ -164,11 +161,8 @@
                     </li>
                   </ul>
                 </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
+        </nav>
+      </header>
       <!--Form-->
       <main class="row m-0 p-0">
         <!--Foto-->
@@ -180,26 +174,25 @@
               <img
                 class="img-fluid"
                 src="https://digitalassets-secure.tesla.com/image/upload/f_auto,q_auto/ftqiaqbl8etcsn6zdpu7.jpg"
-                alt=""
+                alt="Tesla Form Image"
               />
             </div>
           </div>
         </section>
         <!--Formulario-->
         <section class="col-12 col-sm-6 col-md-3 pt-4">
-        <div class="row">
-          <article class="col-12 text-white text-left m-0 p-3">
-            <h3>Seguir Informando</h3>
-            <p>
-              Sea el primero en recibir las noticias, eventos y actualizaciones
-              de los productos de Tesla.
-            </p>
-          </article>
-        </div>
-          <div class="row">
-            <div class="col-12">
-              <form class="needs-validation py-3" novalidate>
-                <div class="form-group">
+          <section class="row">
+            <article class="col-12 text-white text-left m-0 p-3">
+              <h3>Seguir Informando</h3>
+              <p>
+                Sea el primero en recibir las noticias, eventos y actualizaciones
+                de los productos de Tesla.
+              </p>
+            </article>
+          </section>
+          <section class="row">
+              <form class="col-12 needs-validation py-3" novalidate>
+                <section class="form-group">
                   <label for="nombre font-weight-bold">Nombre</label>
                   <input
                     type="text"
@@ -211,8 +204,8 @@
                   <div class="invalid-feedback">
                     Rellene este campo obligatorio
                   </div>
-                </div>
-                <div class="form-group">
+                </section>
+                <section class="form-group">
                   <label for="apellidos font-weight-bold">Apellidos</label>
                   <input
                     type="text"
@@ -224,8 +217,8 @@
                   <div class="invalid-feedback">
                     Rellene este campo obligatorio
                   </div>
-                </div>
-                <div class="form-group">
+                </section>
+                <section class="form-group">
                   <label for="email font-weight-bold">Correo electrónico</label>
                   <input
                     type="email"
@@ -237,8 +230,8 @@
                   <div class="invalid-feedback">
                     Rellene este campo obligatorio
                   </div>
-                </div>
-                <div class="form-group">
+                </section>
+                <section class="form-group">
                   <label for="codigoPostal font-weight-bold"
                     >Codigo Postal</label
                   >
@@ -253,8 +246,8 @@
                   <div class="invalid-feedback">
                     Rellene este campo obligatorio
                   </div>
-                </div>
-                <div class="form-group">
+                </section>
+                <section class="form-group">
                   <p>Seleccionar intereses</p>
                   <div class="form-check my-2 checkbox-wrapper-21">
                     <label
@@ -359,32 +352,27 @@
                   <div class="invalid-feedback">
                     Rellene este campo obligatorio
                   </div>
-                </div>
-                <div class="form-group mt-4">
+                </section>
+                <section class="form-group mt-4">
                   <button class="btn btn-primary w-100" type="submit">
                     Enviar
                   </button>
-                </div>
+                </section>
               </form>
-            </div>
-          </div>
-          <div class="row  pt-2"">
-            <div class="col-12">
-              <p class="submitInfo text-center px-1 pt-3 pb-5">
+          </section>
+          <section class="row  pt-2"">
+              <p class="col-12 submitInfo text-center px-1 pt-3 pb-5">
                 By clicking "Submit" I agree to share the provided information
                 with Tesla to be contacted with more details or offers about
                 Tesla products.
               </p>
-            </div>
-          </div>
+          </section>
         </section>
         <div class="d-none d-md-block col-md-1"></div>
       </main>
       <footer class="row m-0 p-0">
-        <div
-          class="col-12 p-2 m-0"
-        >
-          <ul class="list-group border border-0 d-sm-flex flex-sm-row justify-content-sm-around">
+       
+          <ul class="col-12 p-2 m-0 list-group border border-0 d-sm-flex flex-sm-row justify-content-sm-around">
             <li class="list-group-item  text-center p-0 m-0">
               <a href="#" class="font-weight-bold">Tesla &copy; 2023</a>
             </li>
@@ -410,9 +398,9 @@
               <a href="#" class="font-weight-bold">Localización de tiendas</a>
             </li>
           </ul>
-        </div>
+       
       </footer>
-    </div>
+    </main>
 
   </body>
 </html>

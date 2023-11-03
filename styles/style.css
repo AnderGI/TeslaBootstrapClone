@@ -36,47 +36,6 @@ img.sectionImg {
   object-fit: cover;
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
-/*   No media query since this is the default in Bootstrap */
-
-div.register-alert {
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-size: 0.8rem;
-  letter-spacing: 0em;
-}
-div.navbar-brand {
-  width: 6.5em;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-button.navbar-toggler {
-  background-color: rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
-}
-
-ul.navbar-Icons svg {
-  width: 1.5em;
-}
-nav ul.navbar-nav {
-  font-weight: 600;
-}
-nav li:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 2px;
-}
-
 /*FOOTER*/
 footer {
   background-color: black;
@@ -169,11 +128,8 @@ light brown #4A4B4D
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   /* Register Alert Y Menú */
-  div.register-alert {
+  .register-alert {
     font-size: 0.9rem;
-  }
-  div.navbar-brand {
-    width: 10em;
   }
   section.sliders div.footerBtns button {
     width: 75%;
@@ -183,7 +139,7 @@ light brown #4A4B4D
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   /* Register Alert Y Menú */
-  div.register-alert {
+  .register-alert {
     font-size: 1rem;
   }
   footer ul li.list-group-item a {
