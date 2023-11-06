@@ -4,6 +4,7 @@
 
 html {
   font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -29,7 +30,8 @@ svg.teslaNameLogo{
 
 
 /*VIDEO*/
-video {
+video,
+section.sliders.others img{
   height: 100vh;
   object-fit: cover;
   
@@ -103,8 +105,16 @@ section.sliders div.footerBtns{
   z-index: 1;
 }
 
-section.sliders div.headers{
-  top: 28%;
+section.sliders.header div.headers{
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin: auto;
+}
+
+section.sliders.others div.headers{
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -128,9 +138,18 @@ section.sliders div.footerBtns{
   margin: auto;
 }
 
+section.sliders.others div.footerBtns{
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin: auto;
+}
+
+
+
 section.sliders div.footerBtns button{
   border: 4px solid snow;
-
   width: 100%;
 }
 
