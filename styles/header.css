@@ -46,6 +46,25 @@ nav li:hover {
   border-radius: 2px;
 }
 
+
+
+/*SUPPORT HEADER*/
+main#supportContainer header{
+  background-image: url('../resources/images/components/support_banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+}
+
+main#supportContainer header nav{
+  position: absolute;
+  top: 0;
+}
+
+
+
 /*
 white #E9EAEB
 light brown #4A4B4D
