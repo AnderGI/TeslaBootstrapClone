@@ -32,6 +32,7 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       defer
     ></script>
+    <script src="../js/tab.js" defer></script>
   </head>
   <body>
     <main class="container-fluid bg-white" id="supportContainer">
@@ -105,42 +106,120 @@
           </div>
         </nav>
       </header>
-      <!--Form-->
-      <main class="row m-0 py-5"></main>
-      <footer class="row m-0 p-0 bg-white">
-        <ul
-          class="col-12 p-2 m-0 list-group border border-0 d-sm-flex flex-sm-row justify-content-sm-around"
-        >
-          <li class="list-group-item text-center p-0 m-0 bg-white">
-            <a href="#" class="font-weight-bold text-dark">Tesla &copy; 2023</a>
-          </li>
-          <li class="list-group-item text-center p-0 m-0 bg-white">
-            <a href="#" class="font-weight-bold text-dark"
-              >Privacidad y legal</a
+
+      <main class="row m-0 p-5">
+        <section class="col-12 pt-5 d-flex flex-column">
+          <h3>Temas de Actualidad</h3>
+
+          <ul
+            class="w-100 pt-4 m-0 list-group border border-0 d-sm-flex flex-sm-row justify-content-sm-between"
+            style="list-style: none"
+          >
+            <li class="text-center p-0 m-0">
+              <a href="#" class="text-dark"
+                >Consejos de conducción en invierno</a
+              >
+            </li>
+            <li class="text-center p-0 m-0">
+              <a href="#" class="text-dark">Incentivos</a>
+            </li>
+            <li class="text-center p-0 m-0">
+              <a href="#" class="text-dark">Asistencia sobre Cuenta Tesla</a>
+            </li>
+            <li class="text-center p-0 m-0">
+              <a href="#" class="text-dark">Carga en casa</a>
+            </li>
+            <li class="text-center p-0 m-0">
+              <a href="#" class="text-dark">Supercarga</a>
+            </li>
+            <li class="text-center p-0 m-0">
+              <a href="#" class="text-dark">Visitas a Service</a>
+            </li>
+          </ul>
+        </section>
+        <section class="col-12 pt-5 d-flex flex-column">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active tabBtn"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                Home
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link tabBtn"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                Profile
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
             >
-          </li>
-          <li
-            class="d-none d-sm-block list-group-item text-center p-0 m-0 bg-white"
-          >
-            <a href="#" class="font-weight-bold text-dark">Contacto</a>
-          </li>
-          <li class="list-group-item text-center p-0 m-0 bg-white">
-            <a href="#" class="font-weight-bold text-dark">Noticias</a>
-          </li>
-          <li
-            class="d-none d-sm-block list-group-item text-center p-0 m-0 bg-white"
-          >
-            <a href="#" class="font-weight-bold text-dark">Seguir Informando</a>
-          </li>
-          <li
-            class="d-none d-sm-block list-group-item text-center p-0 m-0 bg-white"
-          >
-            <a href="#" class="font-weight-bold text-dark"
-              >Localización de tiendas</a
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
             >
-          </li>
-        </ul>
-      </footer>
+              ...
+            </div>
+          </div>
+        </section>
+      </main>
     </main>
+    <footer class="row m-0 p-0 bg-white">
+      <ul
+        class="col-12 p-2 m-0 list-group border border-0 d-sm-flex flex-sm-row justify-content-sm-around"
+      >
+        <li class="list-group-item text-center p-0 m-0 bg-white">
+          <a href="#" class="font-weight-bold text-dark">Tesla &copy; 2023</a>
+        </li>
+        <li class="list-group-item text-center p-0 m-0 bg-white">
+          <a href="#" class="font-weight-bold text-dark">Privacidad y legal</a>
+        </li>
+        <li
+          class="d-none d-sm-block list-group-item text-center p-0 m-0 bg-white"
+        >
+          <a href="#" class="font-weight-bold text-dark">Contacto</a>
+        </li>
+        <li class="list-group-item text-center p-0 m-0 bg-white">
+          <a href="#" class="font-weight-bold text-dark">Noticias</a>
+        </li>
+        <li
+          class="d-none d-sm-block list-group-item text-center p-0 m-0 bg-white"
+        >
+          <a href="#" class="font-weight-bold text-dark">Seguir Informando</a>
+        </li>
+        <li
+          class="d-none d-sm-block list-group-item text-center p-0 m-0 bg-white"
+        >
+          <a href="#" class="font-weight-bold text-dark"
+            >Localización de tiendas</a
+          >
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
