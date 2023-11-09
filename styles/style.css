@@ -102,6 +102,14 @@ section.sliders.others div.footerBtns div {
   gap: 1em;
 }
 
+section.sliders.others div.headers {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin: auto;
+}
+
 section.sliders.others a {
   color: var(--btnLightBrown);
   font-weight: 600;
