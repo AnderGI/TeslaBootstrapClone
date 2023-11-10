@@ -1,0 +1,35 @@
+p[data-type="privacidadTerminos"]{
+    font-size: 1rem;
+}
+/*
+white #E9EAEB
+light brown #4A4B4D
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    p[data-type="privacidadTerminos"]{
+        font-size: 1rem;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    p[data-type="privacidadTerminos"]{
+        font-size: 1.05rem;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    p[data-type="privacidadTerminos"]{
+        font-size: 1.1rem;
+    }   
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    /* Register Alert Y Menú */
+    p[data-type="privacidadTerminos"]{
+        font-size: 1.1rem;
+    }
+  }
