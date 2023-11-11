@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="../styles/header.css " />
     <link rel="stylesheet" href="../styles/inicioSesion.css" />
+    <link rel="stylesheet" href="../styles/support.css" />
+
     <!-- Bootstrap CSS -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -112,8 +114,9 @@
           <h3>Temas de Actualidad</h3>
 
           <ul
-            class="w-100 pt-4 m-0 list-group border border-0 d-sm-flex flex-sm-row justify-content-sm-between"
+            class="w-100 pt-4 m-0 list-group border border-0 d-lg-flex flex-lg-row justify-content-lg-between"
             style="list-style: none"
+            data-type="actualidad"
           >
             <li class="text-left py-2 m-0">
               <a href="#" class="text-dark"
@@ -137,7 +140,7 @@
             </li>
           </ul>
         </section>
-        <section class="col-12 pt-5 d-flex flex-column">
+        <section class="col-12 pt-5 d-flex flex-column px-sm-5">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button
@@ -175,8 +178,8 @@
               role="tabpanel"
               aria-labelledby="home-tab"
             >
-              <section class="row">
-                <section class="col-12 col-sm-4 py-3 px-1">
+              <section class="row d-flex flex-row px-5 justify-content-around">
+                <section class="col-12 col-lg-4 py-3 px-0 px-md-5">
                   <h4>Características y carga</h4>
                   <ul
                     class="w-100 pt-3 m-0 list-group border border-0 d-flex flex-column justify-content-start"
@@ -206,7 +209,7 @@
                     </li>
                   </ul>
                 </section>
-                <section class="col-12 col-sm-4 py-3 px-1">
+                <section class="col-12 col-lg-4 py-3 px-0 px-md-5">
                   <h4>Servicio y reparación de carrocería</h4>
                   <ul
                     class="w-100 pt-3 m-0 list-group border border-0"
@@ -247,7 +250,7 @@
                     </li>
                   </ul>
                 </section>
-                <section class="col-12 col-sm-4 py-3 px-1">
+                <section class="col-12 col-lg-4 py-3 px-0 px-md-5">
                   <h4>Cuenta Tesla</h4>
                   <ul
                     class="w-100 pt-3 m-0 list-group border border-0"
@@ -381,6 +384,117 @@
                 </section>
               </section>
             </div>
+          </div>
+        </section>
+
+        <section class="col-12 pt-5">
+          <div class="row d-flex">
+            <section class="col-12 order-2 order-lg-1 col-lg-6">
+              <article data-section="primerosPasos" class="py-2 px-3 px-md-5">
+                <h4 class="text-left text-sm-justify py-4">Primeros Pasos</h4>
+                <p class="text-left text-sm-justify text-dark">
+                  Obtenga información sobre la experiencia de la propiedad de un
+                  Tesla, incluidos el diseño y el proceso de entrega de su
+                  vehículo
+                </p>
+                <ul
+                  class="w-100 py-2 m-0 list-group border border-0 d-flex flex-column justify-content-center"
+                  style="list-style: none"
+                >
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Preguntas Frecuentes: Pedido y entrega</a
+                    >
+                  </li>
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Conductores de coches de empresa</a
+                    >
+                  </li>
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Preparénse para el día de la entrega</a
+                    >
+                  </li>
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Después de la entrega</a
+                    >
+                  </li>
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Después de la compra de segunda mano</a
+                    >
+                  </li>
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Dónde estamos</a
+                    >
+                  </li>
+                </ul>
+              </article>
+            </section>
+            <section class="col-12 order-1 order-lg-2 col-lg-6">
+              <div class="p-0 py-md-3">
+                <img
+                  src="../resources/images/components/getting_started_Asset.avif"
+                  alt="Getting started"
+                  class="img-fluid"
+                />
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="col-12 pt-5">
+          <div class="row d-flex">
+            <section class="col-12 col-lg-6">
+              <div class="p-0 py-md-3">
+                <img
+                  src="../resources/images/components/video_walkthrough_md.jpg"
+                  alt="Getting started"
+                  class="img-fluid"
+                />
+              </div>
+            </section>
+            <section class="col-12 col-lg-6">
+              <article data-section="primerosPasos" class="py-2 px-3 px-md-5">
+                <h4 class="text-left text-sm-justify py-4">Vídeo guías</h4>
+                <p class="text-left text-sm-justify text-dark">
+                  Consulte la biblioteca de vídeos, diseñada para formarle sobre
+                  las características de nuestros productos.
+                </p>
+                <ul
+                  class="w-100 py-2 m-0 list-group border border-0 d-flex flex-column justify-content-center"
+                  style="list-style: none"
+                >
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Conozca su Tesla</a
+                    >
+                  </li>
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Videoguías del Model S (fabricado en 2012-2020)</a
+                    >
+                  </li>
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Videoguías del Model 3</a
+                    >
+                  </li>
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Videoguías del Model X (fabricado en 2015-2020)</a
+                    >
+                  </li>
+                  <li class="text-left text-sm-justify py-2 m-0">
+                    <a href="#" class="text-dark font-weight-bold"
+                      >Videoguías del Model Y</a
+                    >
+                  </li>
+                </ul>
+              </article>
+            </section>
           </div>
         </section>
       </main>
