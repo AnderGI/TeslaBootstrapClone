@@ -37,20 +37,6 @@ img.sectionImg {
   object-fit: cover;
 }
 
-/*FOOTER*/
-footer {
-  background-color: black;
-}
-
-footer ul li.list-group-item {
-  background-color: black;
-  border: none;
-}
-
-footer ul li.list-group-item a {
-  font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.5);
-}
 
 /*Section Sliders*/
 section.sliders {

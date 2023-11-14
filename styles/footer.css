@@ -1,0 +1,60 @@
+/*FOOTER*/
+footer {
+    background-color: black;
+  }
+  
+  footer ul li.list-group-item {
+    background-color: black;
+    border: none;
+  }
+  
+  footer ul li.list-group-item a {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+
+  main#accesories + footer,
+  main#accesories + footer ul li.list-group-item{
+    background-color: transparent;
+  }
+  
+  main#accesories + footer ul li.list-group-item a {
+    font-size: 0.7rem;
+    color: rgb(92, 89, 89);
+  }
+
+/*
+white #E9EAEB
+light brown #4A4B4D
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  
+    footer ul li.list-group-item a {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    main#accesories + footer ul li.list-group-item a {
+        font-size: 0.9rem;
+       
+      }
+ 
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+ 
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+   
+  }
+  
