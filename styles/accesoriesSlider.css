@@ -1,0 +1,14 @@
+#carouselExampleIndicators{
+    height: 100vh;
+}
+
+div.carousel-inner,
+div.carousel-item{
+    height: 100%;
+}
+
+div.carousel-inner div.carousel-item img{
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
