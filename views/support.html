@@ -472,10 +472,10 @@
               aria-labelledby="profile-tab"
             >
               <section class="row">
-                <section class="col-12 py-3 px-1">
+                <section class="col-12 py-3 px-1 d-none d-sm-block">
                   <h4>Powerwall</h4>
                 </section>
-                <section class="col-12 py-3 px-1 row">
+                <section class="col-12 py-3 px-1 row d-none d-sm-block">
                   <section class="col-12 d-md-none">
                     <ul
                       class="w-100 pt-3 m-0 list-group border border-0 d-flex flex-column justify-content-start"
@@ -573,6 +573,190 @@
                     </ul>
                   </section>
                 </section>
+                <!-- COLLAPSE -->
+                <div id="accordion" class="d-block d-sm-none m-0 p-0 w-100">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link text-dark font-weight-bold"
+                          data-toggle="collapse"
+                          data-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Powerwall
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div
+                      id="collapseOne"
+                      class="collapse show"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body p-0">
+                        <ul
+                          class="w-100 pt-3 m-0 list-group border border-0 d-flex flex-column justify-content-start"
+                          style="list-style: none"
+                        >
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Motivos para elegir el Powerwall</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Como funciona el Powerwall</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark">Pida su Powerwall</a>
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Descripcion general de la aplicación móvil</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark">
+                              Modos de Powerwall</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Preparación para la instalación</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Documentos del propietario</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed text-dark font-weight-bold"
+                          data-toggle="collapse"
+                          data-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Servicio y reparación de carroceria
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      aria-labelledby="headingTwo"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body p-0">
+                        <ul
+                          class="w-100 pt-3 m-0 list-group border border-0"
+                          style="list-style: none"
+                        >
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Guía para hacerlo usted mismo</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark">Visitas a Service</a>
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Buscar un taller de carrocería</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Asístencia en carretera</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Garantía del vehículo</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Seguro de extensión</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark">InsureMyTesla</a>
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark">Sostenibilidad</a>
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Mantenimiento de neumáticos</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed text-dark font-weight-bold"
+                          data-toggle="collapse"
+                          data-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Cuenta Tesla
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body p-0">
+                        <ul
+                          class="w-100 pt-3 m-0 list-group border border-0"
+                          style="list-style: none"
+                        >
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Aplicacion de Tesla</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark">Recomendar y ganar</a>
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Asistencia sobre cuenta tesla</a
+                            >
+                          </li>
+                          <li class="text-left py-2 m-0">
+                            <a href="#" class="text-dark"
+                              >Asístencia en carretera</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </section>
             </div>
           </div>
